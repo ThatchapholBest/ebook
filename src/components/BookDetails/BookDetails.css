@@ -1,0 +1,105 @@
+/* BookDetails.css */
+.bookdetails {
+  background: rgb(236,236,236);
+  background: linear-gradient(0deg, rgba(236,236,236,1) 9%, rgba(192,215,217,1) 100%);
+}
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 4rem;
+  min-height: 100vh;
+  /* padding-bottom: 35rem; */
+}
+
+/* สำหรับรูปภาพหนังสือ */
+.book-image img {
+  max-width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+/* สำหรับข้อมูลหนังสือ */
+.book-info {
+  max-width: 100%;
+  padding: 20px;
+  font-size: 18px;
+  border-radius: 20px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+/* สำหรับหัวข้อ */
+.book-info h1 {
+  font-size: 36px;
+}
+
+/* สำหรับรายละเอียดเพิ่มเติม */
+.book-info p {
+  font-size: 18px;
+}
+
+/* สำหรับรายการเนื้อหาหลักใน E-Book */
+.ebook-parts {
+  margin-top: 20px;
+}
+
+/* สำหรับลิงก์ดาวน์โหลด */
+.download-link {
+  background-image: linear-gradient(to right, #457fca 0%, #5691c8  51%, #457fca  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.download-link:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+         
+.btn-grad {
+  background-image: linear-gradient(to right, #06beb6 0%, #48b1bf  51%, #06beb6  100%);
+  margin: 10px;
+  padding: 15px 45px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;            
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  display: block;
+}
+
+.btn-grad:hover {
+  background-position: right center; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Media Query สำหรับหน้าจอขนาดเล็ก */
+@media screen and (max-width: 768px) {
+  /* ปรับขนาดและระยะห่างเมื่อหน้าจอเล็กลง */
+  .book-info {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
+
+/* Media Query สำหรับหน้าจอเล็กกว่า 480px */
+@media screen and (max-width: 480px) {
+  /* ปรับขนาดและระยะห่างเมื่อหน้าจอเล็กกว่า */
+  .book-info {
+    padding: 5px;
+    font-size: 14px;
+  }
+}
